@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { MyVideoComponent } from './my-video/my-video.component';
+import { FileUploadService } from './file-upload.service';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @NgModule({
   imports:      [ 
@@ -19,8 +21,10 @@ import { MyVideoComponent } from './my-video/my-video.component';
   declarations: [
      AppComponent,
      HelloComponent,
-     MyVideoComponent 
+     MyVideoComponent,
+     FileUploadComponent 
      ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [FileUploadService]
 })
 export class AppModule { }
