@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { MyVideoComponent } from './my-video/my-video.component';
 
 @NgModule({
   imports:      [ 
@@ -17,7 +18,8 @@ import { HelloComponent } from './hello.component';
   ],
   declarations: [
      AppComponent,
-     HelloComponent 
+     HelloComponent,
+     MyVideoComponent 
      ],
   bootstrap:    [ AppComponent ]
 })
